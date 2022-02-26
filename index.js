@@ -54,7 +54,7 @@ client.on('message', message => {
 
 
 
-  if(command === 'snakev2' || command === 'GRA W WĘŻA') {
+  if(command === 'snake' || command === 'GRA W WĘŻA') {
 
     return snakeGame.newGame(message);
 
@@ -64,6 +64,4 @@ client.on('message', message => {
 
 
 
-client.login(token bota);
-
-require('http').createServer((req, res) => res.end('Bot ruszył!')).listen(3000)
+client.login(process.env.token);
